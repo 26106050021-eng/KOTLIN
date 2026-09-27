@@ -76,7 +76,7 @@ export const agendaEvents = [
     timelineDate: '3 Okt 2026',
     date: 'Sabtu, 3 Oktober 2026',
     time: '07.30 – 11.45 WIB',
-    location: 'Teatrikal FST UIN Sunan Kalijaga',
+    location: 'Green House (GH)',
     dresscode: {
       male: 'Batik (warna bebas), bawahan bebas rapi, bersepatu.',
       female: 'Batik (warna bebas), bawahan bebas rapi, kerudung/jilbab warna menyesuaikan batik, bersepatu.',

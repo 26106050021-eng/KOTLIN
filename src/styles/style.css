@@ -1834,6 +1834,66 @@ body.materi-page {
   transform: translateY(1px);
 }
 
+.btn-tm-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+  padding: 0.55rem 1rem;
+  background: rgba(14, 28, 58, 0.85);
+  color: #38bdf8 !important;
+  font-size: 0.82rem;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  width: fit-content;
+}
+
+.btn-tm-secondary svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.btn-tm-secondary .arrow-icon {
+  width: 13px;
+  height: 13px;
+  transition: transform 0.2s ease;
+}
+
+.btn-tm-secondary:hover {
+  background: rgba(56, 189, 248, 0.18);
+  color: #7dd3fc !important;
+  border-color: rgba(56, 189, 248, 0.7);
+  box-shadow: 0 6px 16px rgba(56, 189, 248, 0.25);
+  transform: translateY(-1px);
+}
+
+.btn-tm-secondary:hover .arrow-icon {
+  transform: translate(2px, -2px);
+}
+
+.btn-tm-secondary:active {
+  transform: translateY(1px);
+}
+
+.agenda-btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+}
+
+.agenda-btn-group .btn-tm-submit,
+.agenda-btn-group .btn-tm-secondary {
+  margin-top: 0;
+}
+
 /* Makrab Top Secret & Coming Soon Pill */
 .status-pill-coming-soon {
   font-size: 0.72rem;

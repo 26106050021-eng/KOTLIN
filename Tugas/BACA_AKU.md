@@ -3,6 +3,10 @@
 Selamat datang di direktori pengumpulan tugas resmi **INFONIC 2026**!  
 Sistem pengumpulan tugas menggunakan mekanisme kolaborasi standar industri: **Fork & Pull Request di GitHub**.
 
+> [!IMPORTANT]
+> ⏰ **DEADLINE PENGUMPULAN KESELURUHAN TUGAS**: **Kamis, 8 Oktober 2026 pukul 20.00 WIB**  
+> Pastikan seluruh tautan tugas (Week 1 s.d. Week 4) sudah lengkap dan Pull Request (PR) ke repository Kabim gugusmu masing-masing telah diajukan sebelum batas waktu.
+
 ---
 
 ## 🌳 Alur Pengumpulan Tugas (Tingkat / Hierarki)

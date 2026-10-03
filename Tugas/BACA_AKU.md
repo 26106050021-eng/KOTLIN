@@ -5,7 +5,7 @@ Sistem pengumpulan tugas menggunakan mekanisme kolaborasi standar industri: **Fo
 
 > [!IMPORTANT]
 > ⏰ **DEADLINE PENGUMPULAN KESELURUHAN TUGAS**: **Kamis, 8 Oktober 2026 pukul 20.00 WIB**  
-> Pastikan seluruh tautan tugas (Week 1 s.d. Week 4) sudah lengkap dan Pull Request (PR) ke repository Kabim gugusmu masing-masing telah diajukan sebelum batas waktu.
+> Pastikan narasi pengalaman serta pesan dan kesan sudah ditulis dan Pull Request (PR) ke repository Kabim gugusmu masing-masing telah diajukan sebelum batas waktu.
 
 ---
 
@@ -31,7 +31,7 @@ Sistem pengumpulan tugas menggunakan mekanisme kolaborasi standar industri: **Fo
 > **Pull Request kamu akan LANGSUNG DITOLAK jika melanggar salah satu poin di bawah ini:**
 
 1. **DILARANG MENGUBAH FILE TEMPLATE ASLI**:
-   - ❌ Jangan mengedit atau menghapus `Tugas/NIM-NAMA.md`.
+   - ❌ Jangan mengedit atau menghapus `Tugas/NAMA.md`.
    - File template ini wajib tetap bersih sebagai acuan mahasiswa lainnya.
 2. **DILARANG MENGUBAH / MENGHAPUS FILE ORANG LAIN**:
    - ❌ Jangan menyentuh, mengubah, atau menghapus file tugas teman satu gugus atau gugus lain.
@@ -42,7 +42,7 @@ Sistem pengumpulan tugas menggunakan mekanisme kolaborasi standar industri: **Fo
 5. **DILARANG FORMAT PENAMAAN SALAH**:
    - ❌ Jangan pakai spasi, huruf aneh, atau tanpa ekstensi `.md`.
 6. **DILARANG TAUTAN BERSIFAT PRIVATE**:
-   - ❌ Semua link tugas (Google Drive, Figma, Canva, GitHub) **wajib disetel ke PUBLIC** (*Anyone with the link can view*). Tautan private = Nilai tidak dapat diinput.
+   - ❌ Semua link tugas/profil (GitHub, Instagram, LinkedIn) disarankan dapat diakses publik.
 7. **DILARANG MENCANTUMKAN DATA SENSITIF**:
    - ❌ Jangan pernah menulis password akun, PIN, token rahasia, atau data pribadi sensitif di dalam file tugas.
 
@@ -50,21 +50,21 @@ Sistem pengumpulan tugas menggunakan mekanisme kolaborasi standar industri: **Fo
 
 ## 📝 FORMAT PENAMAAN FILE TUGAS
 
-File tugasmu wajib dinamai dengan format:
+File tugasmu wajib dinamai dengan format nama lengkapmu:
 ```bash
-Tugas/<NamaGugus>/<NIM>_<NamaLengkap>.md
+Tugas/<NamaGugus>/<NamaLengkap>.md
 ```
-*(Gunakan **underscore `_`**, tanpa spasi, kapitalisasi jelas)*
+*(Gunakan kapitalisasi jelas di awal kata, tanpa spasi)*
 
 ### ✅ Contoh yang BENAR:
-- `Tugas/JavaScript/26106050001_MuhammadAdzka.md`
-- `Tugas/Python/26106050012_SitiFatimah.md`
-- `Tugas/C++/26106050045_ImamWahyudi.md`
+- `Tugas/JavaScript/MuhammadAdzka.md`
+- `Tugas/Python/SitiFatimah.md`
+- `Tugas/C++/ImamWahyudi.md`
 
 ### ❌ Contoh yang SALAH:
-- `Tugas/NIM-NAMA.md` *(Mengedit template)*
-- `Tugas/Python/26106050012 Siti Fatimah.md` *(Ada spasi)*
-- `Tugas/26106050012_SitiFatimah.md` *(Di luar folder gugus)*
+- `Tugas/NAMA.md` *(Mengedit template langsung)*
+- `Tugas/Python/Siti Fatimah.md` *(Ada spasi)*
+- `Tugas/SitiFatimah.md` *(Di luar folder gugus)*
 - `Tugas/Python/tugas1.docx` *(Bukan format markdown)*
 
 ---
@@ -84,8 +84,8 @@ Tugas/<NamaGugus>/<NIM>_<NamaLengkap>.md
 
 ### 3. Buat File Tugasmu
 - Buka folder `Tugas/<NamaGugusMu>/`.
-- Buat file baru bernama `NIM_NamaLengkap.md` (atau salin isi template dari `Tugas/NIM-NAMA.md`).
-- Isi data diri lengkap dan tautkan seluruh link tugas (Week 1 s.d. Week 4) sesuai instruksi.
+- Buat file baru bernama `NamaLengkap.md` (atau salin isi template dari `Tugas/NAMA.md`).
+- Isi data diri, ceritakan narasi pengalaman selama mengikuti INFONIC, dan tuliskan pesan serta kesanmu.
 - Simpan file (`Ctrl + S`).
 
 ### 4. Cek Status, Commit & Push
@@ -95,21 +95,21 @@ Tugas/<NamaGugus>/<NIM>_<NamaLengkap>.md
   git status
 
   # 2. Stage file tugasmu
-  git add Tugas/<NamaGugusMu>/<NIM>_<NamaLengkap>.md
+  git add Tugas/<NamaGugusMu>/<NamaLengkap>.md
 
   # 3. Simpan perubahan dengan pesan commit
-  git commit -m "Submit tugas osjur - <NIM>"
+  git commit -m "Submit tugas osjur - <NamaLengkap>"
 
   # 4. Upload ke repo GitHub pribadimu
   git push origin main
   ```
-  *(Contoh: `git commit -m "Submit tugas osjur - 26106050045"`)*
+  *(Contoh: `git commit -m "Submit tugas osjur - Muhammad Adzka"`)*
 
 ### 5. Buat Pull Request (PR)
 - Buka repository hasil fork di akun GitHub-mu melalui browser.
 - Klik tombol **Contribute** ➔ **Open Pull Request**.
 - Pastikan tujuannya (*base repository*) adalah repository Kabim gugusmu.
-- Judul PR: `Submit tugas osjur - <NIM>`
+- Judul PR: `Submit tugas osjur - <NamaLengkap>`
 - Deskripsi PR: Tuliskan Gugus & Nama Lengkapmu.
 - Klik **Create Pull Request**.
 
@@ -122,19 +122,19 @@ Tugas/<NamaGugus>/<NIM>_<NamaLengkap>.md
 
 ## 🛠️ PANDUAN DARURAT: CARA MEMBATALKAN FILE YANG SALAH EDIT
 
-Jika kamu tidak sengaja mengedit file template `NIM-NAMA.md` atau file teman:
+Jika kamu tidak sengaja mengedit file template `NAMA.md` atau file teman:
 
 1. **Jika belum di-commit**:
    ```bash
-   git restore Tugas/NIM-NAMA.md
+   git restore Tugas/NAMA.md
    ```
 2. **Jika sudah di-commit (tapi belum di-push)**:
    ```bash
    git reset --soft HEAD~1
-   git restore Tugas/NIM-NAMA.md
+   git restore Tugas/NAMA.md
    ```
 3. **Jika sudah di-push atau mengalami Merge Conflict**:
-   - Baca panduan lengkap solusinya di web: [Panduan Troubleshooting & Rollback INFONIC 2026](https://infonic-2026.vercel.app/materi/utility/#salah-edit-file)
+   - Baca panduan lengkap solusinya di web: [Panduan Troubleshooting & Rollback INFONIC 2026](https://infonic-2026.vercel.app/materi/utility.html#salah-edit-file)
 
 ---
 

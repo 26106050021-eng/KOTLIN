@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
@@ -829,7 +829,7 @@
       <section id="salah-edit-file">
         <h2>1. Cara Membatalkan File yang Tak Sengaja Terubah (Rollback)</h2>
         <p>
-          Terkadang kamu tidak sengaja mengedit file template (<code>Tugas/NIM-NAMA.md</code>), file teman lain, atau file sistem seperti <code>index.html</code>. Berikut solusi mengembalikan ke versi asli berdasarkan tahapan yang sedang terjadi:
+          Terkadang kamu tidak sengaja mengedit file template (<code>Tugas/NAMA.md</code>), file teman lain, atau file sistem seperti <code>index.html</code>. Berikut solusi mengembalikan ke versi asli berdasarkan tahapan yang sedang terjadi:
         </p>
 
         <!-- Skenario 1 -->
@@ -850,14 +850,14 @@
               <div class="error-content">
                 <p><strong>1. Mengembalikan 1 file tertentu ke versi semula:</strong></p>
                 <pre><code class="language-bash"># Mengembalikan file template yang tak sengaja terubah
-git restore Tugas/NIM-NAMA.md
+git restore Tugas/NAMA.md
 
 # Atau jika menggunakan Git versi lama (&lt; 2.23):
-git checkout -- Tugas/NIM-NAMA.md</code></pre>
+git checkout -- Tugas/NAMA.md</code></pre>
                 
                 <p><strong>2. Membatalkan jika sudah sempat <code>git add .</code> (Unstage):</strong></p>
-                <pre><code class="language-bash">git restore --staged Tugas/NIM-NAMA.md
-git restore Tugas/NIM-NAMA.md</code></pre>
+                <pre><code class="language-bash">git restore --staged Tugas/NAMA.md
+git restore Tugas/NAMA.md</code></pre>
 
                 <p><strong>3. Mengembalikan SELURUH perubahan yang belum di-commit:</strong></p>
                 <pre><code class="language-bash">git restore .</code></pre>
@@ -887,11 +887,11 @@ git restore Tugas/NIM-NAMA.md</code></pre>
 git reset --soft HEAD~1
 
 # Kemudian kembalikan file template yang salah diedit
-git restore Tugas/NIM-NAMA.md
+git restore Tugas/NAMA.md
 
 # Lalu buat commit ulang yang bersih
 git add .
-git commit -m "Submit tugas osjur - <NIM_KAMU>"</code></pre>
+git commit -m "Submit tugas osjur - <NamaLengkap>"</code></pre>
               </div>
             </div>
           </div>
@@ -915,10 +915,10 @@ git commit -m "Submit tugas osjur - <NIM_KAMU>"</code></pre>
               <div class="error-content">
                 <p>Ambil kembali isi file template asli dari repository pusat/upstream lalu commit perbaikan:</p>
                 <pre><code class="language-bash"># Ambil versi asli file template dari commit sebelumnya
-git checkout origin/main -- Tugas/NIM-NAMA.md
+git checkout origin/main -- Tugas/NAMA.md
 
 # Commit perubahan perbaikan ini dan push ke GitHub-mu
-git add Tugas/NIM-NAMA.md
+git add Tugas/NAMA.md
 git commit -m "fix: revert accidental template changes"
 git push origin main</code></pre>
               </div>
@@ -928,11 +928,11 @@ git push origin main</code></pre>
               <div class="error-content">
                 <pre><code class="language-bash"># Batalkan commit terakhir di lokal
 git reset --soft HEAD~1
-git restore Tugas/NIM-NAMA.md
+git restore Tugas/NAMA.md
 
 # Commit ulang file yang benar
 git add .
-git commit -m "Submit tugas osjur - <NIM_KAMU>"
+git commit -m "Submit tugas osjur - <NamaLengkap>"
 
 # Timpa riwayat di GitHub fork pribadimu
 git push origin main --force</code></pre>
@@ -1124,7 +1124,7 @@ git push origin main</code></pre>
             <div class="error-row">
               <div class="error-label solution">Solusi</div>
               <div class="error-content">
-                Tekan tombol <span class="kbd">Esc</span> di keyboard &rarr; ketik <code>:q!</code> &rarr; tekan <span class="kbd">Enter</span>. Kemudian ulangi commit dengan menyertakan pesan: <code>git commit -m "Submit tugas osjur - NIM"</code>.
+                Tekan tombol <span class="kbd">Esc</span> di keyboard &rarr; ketik <code>:q!</code> &rarr; tekan <span class="kbd">Enter</span>. Kemudian ulangi commit dengan menyertakan pesan: <code>git commit -m "Submit tugas osjur - &lt;NamaLengkap&gt;"</code>.
               </div>
             </div>
           </div>

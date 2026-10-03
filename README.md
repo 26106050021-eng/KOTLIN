@@ -9,16 +9,16 @@ Repository ini adalah pusat pengumpulan hasil karya dan penugasanmu selama mengi
 
 ## 🎯 Keterangan & Aturan Pengumpulan Tugas
 
-Setiap mahasiswa baru wajib mengumpulkan **link-link tugas** (seperti link Google Drive, repository proyek pribadi, dokumen, atau portofolio desain) ke dalam folder kelompok/gugus masing-masing.
+Setiap mahasiswa baru wajib mengumpulkan berkas tugas berupa narasi refleksi pengalaman Osjur INFONIC (Week 1 s.d. Week 4) ke dalam folder gugus masing-masing.
 
 ### 📋 Cara Pengisian Tugas:
-1. **Masuk ke Folder Kelompok/Gugusmu**: Buka direktori yang sesuai dengan kelompokmu di dalam folder **`Tugas/<Nama_Kelompok>/`** (contoh: `Tugas/Python/` atau `Tugas/PHP/`).
-2. **Gunakan Template yang Ada**: Di dalam folder kelompok sudah tersedia file template bernama **`NIM-NAMA.md`**.
+1. **Masuk ke Folder Kelompok/Gugusmu**: Buka direktori yang sesuai dengan kelompokmu di dalam folder **`Tugas/<NamaGugus>/`** (contoh: `Tugas/JavaScript/` atau `Tugas/Python/`).
+2. **Gunakan Template yang Ada**: Di dalam folder `Tugas/` tersedia file template bernama **`NAMA.md`**.
 3. **Salin (Duplikat) & Ganti Nama**:  
-   - **JANGAN** mengedit langsung file `NIM-NAMA.md`!  
-   - Salin file tersebut kedalam folder gugusmu, lalu ganti nama file hasil salinannya menjadi format: **`NIM_NamaLengkap.md`** (Contoh: `261060500XX_ImamWahyudi.md`).
-4. **Isi Link Tugas**: Buka file barumu, lalu cantumkan seluruh link pengumpulan tugas Osjur sesuai format di dalam template.
-5. **Kumpulkan via Pull Request**: Kirimkan file tugasmu kembali ke repository resmi panitia menggunakan metode **Fork & Pull Request (PR)** yang bisa dilihat melalui link dibawah.
+   - **JANGAN** mengedit langsung file `NAMA.md` asli!  
+   - Salin file tersebut ke dalam folder gugusmu, lalu ganti nama filenya menjadi nama lengkapmu: **`NamaLengkap.md`** (Contoh: `ImamWahyudi.md`).
+4. **Isi Data Diri, Pengalaman & Pesan Kesan**: Buka file barumu, lengkapi data diri (Nama, Akun GitHub, Instagram, LinkedIn), lalu tuliskan narasi pengalaman serta pesan dan kesan selama mengikuti rangkaian INFONIC.
+5. **Kumpulkan via Pull Request**: Kirimkan file tugasmu kembali ke repository Kakak Pembimbing (Kabim) gugusmu menggunakan metode **Fork & Pull Request (PR)**.
 
 ---
 
@@ -26,22 +26,21 @@ Setiap mahasiswa baru wajib mengumpulkan **link-link tugas** (seperti link Googl
 
 > [!CAUTION]
 > **JANGAN PERNAH MENGUBAH ATAU MENGHAPUS FILE MILIK TEMAN LAIN!**  
-> Mengubah file mahasiswa lain atau mengubah file template asli (`NIM-NAMA.md`) akan menyebabkan *merge conflict* dan Pull Request kamu akan otomatis **ditolak (rejected)** oleh panitia.
+> Mengubah file mahasiswa lain atau mengubah file template asli (`NAMA.md`) akan menyebabkan *merge conflict* dan Pull Request kamu akan otomatis **ditolak (rejected)** oleh panitia.
 
 Agar proses pengumpulan tugasmu lancar dan tidak kendala teknis:
 
 ### ❌ LARANGAN (Don'ts):
-- **JANGAN** mengedit file `NIM-NAMA.md` asli milik panitia atau file `NIM_Nama.md` milik mahasiswa lain.
+- **JANGAN** mengedit file `NAMA.md` asli milik panitia atau file tugas milik mahasiswa lain.
 - **JANGAN** menaruh file tugas di luar folder kelompok/gugusmu sendiri.
-- **JANGAN** mengubah `README.md` ini atau struktur folder repository.
-- **JANGAN** membuat Pull Request baru sebelum melakukan *Sync Fork* jika ada perubahan terbaru dari panitia di repository utama.
+- **JANGAN** mengubah file sistem web, styling, atau struktur repository.
+- **JANGAN** mencantumkan data rahasia/sensitif (password email, dsb.).
 
 ### ✅ ATURAN WAJIB (Do's):
-- **Pastikan penamaan file sesuai format**: `NIM_NamaLengkap.md` (gunakan *underscore* `_`, tanpa spasi).
-- **Pastikan izin akses link terbuka**: Seluruh link tugas (Google Drive, Figma, dsb.) harus diatur ke hak akses **Public / Anyone with the link can view**.
-- **Tulis pesan commit yang rapi**, contoh: `Submit tugas osjur - 261060500XX - Imam Wahyudi`.
+- **Pastikan penamaan file sesuai format**: `NamaLengkap.md` (tanpa spasi, kapitalisasi jelas di awal kata).
+- **Tulis pesan commit yang rapi**, contoh: `Submit tugas osjur - Imam Wahyudi`.
 
-Link tutorial fork and pull: [tutorial Fork and Pull](https://gist.github.com/ImamWahyudiz/e3d68cc174b13ec9d397a0ddc1399d27#file-03-tutorial_fork_pr-md)
+Link panduan lengkap: [Panduan Kolaborasi & Fork PR](https://infonic-2026.vercel.app/materi/fork-pr.html)
 
 ---
 

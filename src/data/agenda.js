@@ -64,8 +64,8 @@ export const agendaEvents = [
       male: 'Kaos putih polos, bawahan bebas rapi, topi PBAK, bersepatu.',
       female: 'Kaos putih polos, bawahan bebas rapi sopan, jilbab hitam rapi, topi PBAK, bersepatu.',
     },
-    notes: 'Tugas: 1. Membuat akun LinkedIn (min. 20 koneksi), 2. Daftar pengalaman organisasi lengkap rentang waktu di MS Word min. 3 (Form perpanjangan/extend).',
-    submissionLink: 'https://forms.gle/V7WnZSwBQyVNozkJ7',
+    notes: 'Tugas: 1. Membuat akun LinkedIn (min. 10 koneksi), 2. Daftar pengalaman organisasi lengkap rentang waktu di MS Word min. 3 (Form perpanjangan/extend dl 8 Okt 20.00 WIB).',
+    submissionLink: 'https://forms.gle/rcjGVB7u4L1zhkDD8',
   },
   {
     index: 4,
@@ -81,8 +81,9 @@ export const agendaEvents = [
       male: 'Batik (warna bebas), bawahan bebas rapi, bersepatu.',
       female: 'Batik (warna bebas), bawahan bebas rapi, kerudung/jilbab warna menyesuaikan batik, bersepatu.',
     },
-    notes: 'Tugas: 1. CV ATS Harvard Style (GForm), 2. Tugas Fork repo Kabim masing-masing & PR (dipandu langsung oleh Kabim, deadline: 8 Oktober 2026 20.00 WIB).',
-    submissionLink: 'https://forms.gle/ueZNfJTA2iExZ59AA',
+    notes: 'Tugas: 1. CV ATS Harvard Style (GForm), 2. Extend Profil & min 10 koneksi LinkedIn (GForm), 3. Fork repo Kabim masing-masing & PR (dipandu langsung oleh Kabim). Deadline keseluruhan: 8 Oktober 2026 pukul 20.00 WIB.',
+    submissionLink: 'https://forms.gle/et9etq2nkZXk3zGw9',
+    extendLink: 'https://forms.gle/rcjGVB7u4L1zhkDD8',
   },
   {
     index: 5,

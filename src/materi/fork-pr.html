@@ -868,6 +868,21 @@
           </div>
         </div>
 
+        <!-- Mental Model Ringkas untuk Maba -->
+        <div class="info-box" style="margin-top:1.25rem; border-color: rgba(56, 189, 248, 0.35); background: rgba(14, 28, 58, 0.65);">
+          <div class="callout-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--cyan);"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </div>
+          <div>
+            <strong>🧠 Pahami 3 Lokasi Berkasmu (Biar Tidak Bingung):</strong>
+            <ul style="margin-top:0.4rem; padding-left:1.25rem;">
+              <li><strong>Laptop Kamu (Local):</strong> Tempat kamu mengetik tugas di VS Code dan membuat file <code>NIM_Nama.md</code>.</li>
+              <li><strong>Repo Fork Pribadi (Origin):</strong> Akun GitHub-mu sendiri (hasil klik tombol Fork). Di sinilah hasil kerjamu di-upload (<code>git push</code>).</li>
+              <li><strong>Repo Kabim (Upstream / Target):</strong> Repositori milik Kakak Pembimbing. Tempat kamu mengirimkan tugas via <strong>Pull Request (PR)</strong>.</li>
+            </ul>
+          </div>
+        </div>
+
         <div class="info-box">
           <div class="callout-icon">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--primary);"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg>
@@ -974,13 +989,34 @@
           <li class="step-item">
             <div class="step-num">4</div>
             <div class="step-body">
-              <div class="step-title">Commit &amp; Push ke Repository GitHub Pribadimu</div>
+              <div class="step-title">Cek Status, Commit &amp; Push ke GitHub Pribadimu</div>
               <div class="step-desc">
-                <p>Buka terminal VS Code (<span class="kbd">Ctrl+`</span>) dan jalankan perintah berikut:</p>
-                <pre><code class="language-bash">git add .
+                <p>Buka terminal VS Code (<span class="kbd">Ctrl+`</span>). Sebelum mengunggah, biasakan <strong>selalu cek status</strong> terlebih dahulu agar file lain tidak ikut terunggah secara tidak sengaja:</p>
+                <pre><code class="language-bash"># 1. Cek file yang berubah (Pastikan HANYA file tugasmu yang terdaftar!)
+git status
+
+# 2. Stage file tugasmu (Paling aman tentukan file tugasmu langsung)
+git add Tugas/NamaGugus/NIM_NamaLengkap.md
+
+# Atau jika ingin menambahkan sekaligus:
+# git add .
+
+# 3. Simpan perubahan dengan pesan commit yang jelas
 git commit -m "Submit tugas osjur - &lt;NIM_KAMU&gt;"
+
+# 4. Upload ke repository GitHub pribadimu
 git push origin main</code></pre>
-                <p>Contoh: <code>git commit -m "Submit tugas osjur - 26106050001"</code></p>
+                <p><em>Contoh commit:</em> <code>git commit -m "Submit tugas osjur - 26106050001"</code></p>
+
+                <div class="info-box" style="margin-top:0.75rem; border-color: rgba(251, 146, 60, 0.4); background: rgba(30, 20, 10, 0.6);">
+                  <div class="callout-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--orange);"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                  </div>
+                  <div>
+                    <strong>Tips Mitigasi Cepat:</strong> Saat mengetik <code>git status</code>, jika kamu melihat ada file lain yang berubah merah (misal tak sengaja tersentuh <code>Tugas/NIM-NAMA.md</code>), kembalikan dulu dengan perintah:
+                    <pre style="margin:0.4rem 0 0;"><code class="language-bash">git restore Tugas/NIM-NAMA.md</code></pre>
+                  </div>
+                </div>
               </div>
             </div>
           </li>
@@ -998,12 +1034,29 @@ git push origin main</code></pre>
                   <li>Deskripsi PR: Sebutkan Gugus dan Nama Lengkapmu.</li>
                   <li>Klik <strong>Create pull request</strong>.</li>
                 </ol>
-                <div class="info-box">
+
+                <div class="info-box" style="margin-top:0.75rem;">
                   <div class="callout-icon">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--primary);"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg>
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--emerald);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
                   </div>
                   <div>
                     <strong>Selesai!</strong> Kabim gugusmu akan memeriksa tugasmu dan melakukan merge PR.
+                  </div>
+                </div>
+
+                <!-- Mitigasi Revisi PR Otomatis -->
+                <div class="info-box" style="margin-top:0.75rem; border-color: rgba(56, 189, 248, 0.45); background: rgba(14, 28, 58, 0.75);">
+                  <div class="callout-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--primary);"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  </div>
+                  <div>
+                    <strong>🔄 Kalau Kabim Minta Revisi, JANGAN Buat PR Baru!</strong><br>
+                    Jika Kabim meminta perbaikan (misalnya link Google Drive masih private atau nama file typo):
+                    <ol style="margin-top:0.35rem; padding-left:1.25rem;">
+                      <li>Cukup edit file tugasmu kembali di VS Code laptopmu.</li>
+                      <li>Jalankan <code>git status</code> &rarr; <code>git add .</code> &rarr; <code>git commit -m "revisi tugas"</code> &rarr; <code>git push origin main</code>.</li>
+                      <li>Halaman Pull Request kamu di GitHub <strong>otomatis ter-update sendiri</strong>! Kamu tidak perlu menutup atau membuat PR baru.</li>
+                    </ol>
                   </div>
                 </div>
               </div>
@@ -1027,6 +1080,7 @@ git push origin main</code></pre>
               <li>Menaruh file di luar subfolder gugus yang telah ditentukan.</li>
               <li>Format penamaan file salah (menggunakan spasi, dash, atau tanpa ekstensi <code>.md</code>).</li>
               <li>Link tugas (Google Drive, Figma, dsb.) bersifat private / terkunci.</li>
+              <li>Mencantumkan data sensitif seperti password email kampus, PIN, atau token akun pribadi di dalam file tugas.</li>
               <li>Mengubah file root seperti <code>index.html</code>, <code>README.md</code>, atau konfigurasi sistem.</li>
             </ul>
           </div>
@@ -1057,6 +1111,7 @@ Tugas/26106050012_SitiFatimah.md      (Di luar folder gugus)</code></pre>
           <li>File dinamai dengan format <code>NIM_NamaLengkap.md</code> (menggunakan underscore <code>_</code>).</li>
           <li>File berada di dalam folder gugusmu sendiri (contoh: <code>Tugas/JavaScript/</code>).</li>
           <li>File template <code>Tugas/NIM-NAMA.md</code> tidak tersentuh/diedit sama sekali.</li>
+          <li>Sudah menjalankan <code>git status</code> dan memastikan hanya file tugasmu yang ada di perubahan.</li>
           <li>Seluruh link tugas (Drive/Figma/GitHub) bisa dibuka di mode *Incognito/Private window* tanpa perlu login.</li>
           <li>Sudah menjalankan <code>git push origin main</code> ke repository GitHub pribadimu.</li>
           <li>Tujuan Pull Request diarahkan ke repository Kabim gugusmu.</li>

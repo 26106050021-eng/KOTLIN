@@ -43,6 +43,8 @@ Sistem pengumpulan tugas menggunakan mekanisme kolaborasi standar industri: **Fo
    - ❌ Jangan pakai spasi, huruf aneh, atau tanpa ekstensi `.md`.
 6. **DILARANG TAUTAN BERSIFAT PRIVATE**:
    - ❌ Semua link tugas (Google Drive, Figma, Canva, GitHub) **wajib disetel ke PUBLIC** (*Anyone with the link can view*). Tautan private = Nilai tidak dapat diinput.
+7. **DILARANG MENCANTUMKAN DATA SENSITIF**:
+   - ❌ Jangan pernah menulis password akun, PIN, token rahasia, atau data pribadi sensitif di dalam file tugas.
 
 ---
 
@@ -86,11 +88,19 @@ Tugas/<NamaGugus>/<NIM>_<NamaLengkap>.md
 - Isi data diri lengkap dan tautkan seluruh link tugas (Week 1 s.d. Week 4) sesuai instruksi.
 - Simpan file (`Ctrl + S`).
 
-### 4. Commit & Push
-- Jalankan perintah berikut di terminal:
+### 4. Cek Status, Commit & Push
+- Buka terminal VS Code (`Ctrl + ~` / `Ctrl + ` `):
   ```bash
-  git add .
+  # 1. Cek perubahan (Pastikan HANYA file tugasmu yang terdaftar!)
+  git status
+
+  # 2. Stage file tugasmu
+  git add Tugas/<NamaGugusMu>/<NIM>_<NamaLengkap>.md
+
+  # 3. Simpan perubahan dengan pesan commit
   git commit -m "Submit tugas osjur - <NIM>"
+
+  # 4. Upload ke repo GitHub pribadimu
   git push origin main
   ```
   *(Contoh: `git commit -m "Submit tugas osjur - 26106050045"`)*
@@ -98,10 +108,15 @@ Tugas/<NamaGugus>/<NIM>_<NamaLengkap>.md
 ### 5. Buat Pull Request (PR)
 - Buka repository hasil fork di akun GitHub-mu melalui browser.
 - Klik tombol **Contribute** ➔ **Open Pull Request**.
-- Pastikan tujuannya adalah repository Kabim gugusmu.
+- Pastikan tujuannya (*base repository*) adalah repository Kabim gugusmu.
 - Judul PR: `Submit tugas osjur - <NIM>`
 - Deskripsi PR: Tuliskan Gugus & Nama Lengkapmu.
 - Klik **Create Pull Request**.
+
+> [!TIP]
+> **💡 Kalau Kabim meminta revisi, JANGAN buat PR baru!**  
+> Cukup edit file tugasmu kembali di VS Code laptopmu, lalu jalankan `git status` ➔ `git add .` ➔ `git commit -m "revisi tugas"` ➔ `git push origin main`.  
+> Halaman Pull Request kamu di GitHub **otomatis ter-update sendiri**! Tidak perlu menutup atau membuat PR baru.
 
 ---
 

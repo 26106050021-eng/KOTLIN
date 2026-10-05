@@ -96,8 +96,8 @@ export const agendaEvents = [
     time: '10 – 11 Oktober 2026',
     location: 'Wisma Kapondang',
     dresscode: {
-      male: 'Kaos putih, celana training. Disarankan bawa jaket tebal, selimut & obat-obatan pribadi.',
-      female: 'Kaos putih, celana training, jilbab hitam rapi. Disarankan bawa jaket tebal, selimut & obat-obatan pribadi.',
+      male: 'Kaos putih, celana training, co-card. Disarankan bawa jaket tebal, selimut & obat-obatan pribadi.',
+      female: 'Kaos putih, celana training, jilbab hitam rapi, co-card. Disarankan bawa jaket tebal, selimut & obat-obatan pribadi.',
     },
     notes: 'Tugas Besar: 1. Digital Book Individu, 2. Video Vlog 1 per Gugus, 3. Bukti Upload IG Individu (Deadline: 8 Oktober 2026 pukul 20.00 WIB).',
     isMakrab: true,

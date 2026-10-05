@@ -1452,6 +1452,7 @@ body.materi-page {
 
 .agenda-carousel-track {
   display: flex;
+  align-items: flex-start;
   transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
   /* Use 3d acceleration without permanent will-change raster lock */
   transform: translate3d(0, 0, 0);
@@ -1890,77 +1891,176 @@ body.materi-page {
 }
 
 .agenda-btn-group .btn-tm-submit,
-.agenda-btn-group .btn-tm-secondary {
+.agenda-btn-group .btn-tm-secondary,
+.agenda-btn-group .btn-tm-makrab {
   margin-top: 0;
 }
 
-/* Makrab Top Secret & Coming Soon Pill */
-.status-pill-coming-soon {
-  font-size: 0.72rem;
-  font-weight: 800;
-  padding: 0.25rem 0.65rem;
-  border-radius: 6px;
-  background: rgba(168, 85, 247, 0.15);
-  color: var(--purple-400);
-  border: 1px solid rgba(168, 85, 247, 0.4);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.status-pill-top-secret {
-  font-size: 0.72rem;
-  font-weight: 800;
-  padding: 0.25rem 0.65rem;
-  border-radius: 6px;
-  background: rgba(239, 68, 68, 0.15);
-  color: #f87171;
-  border: 1px solid rgba(239, 68, 68, 0.4);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.makrab-secret-box {
-  background: rgba(14, 22, 40, 0.6);
-  border: 1.5px dashed rgba(168, 85, 247, 0.45);
-  border-radius: 12px;
-  padding: 1.4rem 1.25rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 0.65rem;
-  margin-top: 0.35rem;
-}
-
-.secret-badge {
+.btn-tm-makrab {
   display: inline-flex;
   align-items: center;
-  gap: 0.55rem;
-  padding: 0.45rem 1.1rem;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+  padding: 0.55rem 1rem;
+  background: linear-gradient(135deg, #9333ea 0%, #7e22ce 100%);
+  color: #ffffff !important;
+  font-size: 0.82rem;
+  font-weight: 700;
   border-radius: 8px;
-  background: rgba(239, 68, 68, 0.12);
-  border: 1.5px solid rgba(239, 68, 68, 0.5);
-  color: #f87171;
-  font-weight: 800;
-  font-size: 0.85rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  box-shadow: 0 0 16px rgba(239, 68, 68, 0.22);
+  text-decoration: none;
+  border: 1px solid rgba(192, 132, 252, 0.45);
+  box-shadow: 0 4px 14px rgba(147, 51, 234, 0.3);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  width: fit-content;
 }
 
-.secret-badge svg {
-  width: 17px;
-  height: 17px;
-  color: #f87171;
+.btn-tm-makrab svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
 }
 
-.secret-desc {
-  font-size: 0.84rem;
-  color: var(--text-muted);
-  line-height: 1.55;
-  margin: 0;
-  max-width: 400px;
+.btn-tm-makrab .arrow-icon {
+  width: 13px;
+  height: 13px;
+  transition: transform 0.2s ease;
+}
+
+.btn-tm-makrab:hover {
+  background: linear-gradient(135deg, #a855f7 0%, #9333ea 100%);
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 6px 18px rgba(168, 85, 247, 0.45);
+  transform: translateY(-1px);
+}
+
+.btn-tm-makrab:hover .arrow-icon {
+  transform: translate(2px, -2px);
+}
+
+.btn-tm-makrab:active {
+  transform: translateY(1px);
+}
+
+/* =========================================================
+   MAKRAB SPECIAL INTENSE GLOW EFFECT
+   ========================================================= */
+.agenda-card-makrab {
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(192, 132, 252, 0.75) !important;
+  box-shadow: 0 10px 35px rgba(126, 34, 206, 0.45), 
+              0 0 30px rgba(168, 85, 247, 0.35) !important;
+}
+
+/* Intensified Cosmic Aurora Glow Layer */
+.makrab-card-glow {
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  width: 220%;
+  height: 220%;
+  background: radial-gradient(circle at 50% 30%, rgba(216, 180, 254, 0.35) 0%, rgba(168, 85, 247, 0.22) 28%, rgba(126, 34, 206, 0.12) 55%, transparent 75%);
+  pointer-events: none;
+  z-index: 0;
+  animation: makrabSuperGlow 4.5s ease-in-out infinite alternate;
+  filter: blur(14px);
+}
+
+@keyframes makrabSuperGlow {
+  0% {
+    transform: translate(0, 0) scale(0.95);
+    opacity: 0.7;
+    filter: blur(14px);
+  }
+  50% {
+    transform: translate(3%, 3%) scale(1.1);
+    opacity: 1;
+    filter: blur(8px);
+  }
+  100% {
+    transform: translate(-3%, -2%) scale(1.05);
+    opacity: 0.85;
+    filter: blur(16px);
+  }
+}
+
+.agenda-card-makrab > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Makrab Card Active / Hover Intense Neon Border & Glow */
+.agenda-card-makrab:hover {
+  border-color: #d8b4fe !important;
+  box-shadow: 0 16px 45px rgba(126, 34, 206, 0.6), 
+              0 0 45px rgba(192, 132, 252, 0.55),
+              inset 0 0 20px rgba(168, 85, 247, 0.25) !important;
+}
+
+.agenda-card.active.agenda-card-makrab,
+.agenda-card.active[data-index="5"] {
+  border-color: #e9d5ff !important;
+  box-shadow: 0 24px 55px -6px rgba(126, 34, 206, 0.7), 
+              0 0 50px rgba(192, 132, 252, 0.75), 
+              0 0 90px rgba(168, 85, 247, 0.45),
+              inset 0 0 30px rgba(192, 132, 252, 0.35) !important;
+}
+
+/* Intense Pulsing Glow for Timeline Dots */
+.tl-dot-makrab {
+  border-color: #d8b4fe !important;
+  background: #1e1035 !important;
+  box-shadow: 0 0 16px rgba(192, 132, 252, 0.8), 
+              0 0 32px rgba(168, 85, 247, 0.5) !important;
+  animation: pulseMakrabGlow 2s infinite alternate !important;
+}
+
+@keyframes pulseMakrabGlow {
+  0% { 
+    box-shadow: 0 0 12px rgba(192, 132, 252, 0.6), 0 0 24px rgba(168, 85, 247, 0.35); 
+    transform: scale(1); 
+  }
+  100% { 
+    box-shadow: 0 0 28px rgba(233, 213, 255, 1), 0 0 55px rgba(168, 85, 247, 0.85); 
+    transform: scale(1.18); 
+  }
+}
+
+.tl-step.active .tl-dot-makrab {
+  background: #c084fc !important;
+  border-color: #ffffff !important;
+  box-shadow: 0 0 30px rgba(233, 213, 255, 1), 
+              0 0 65px rgba(168, 85, 247, 0.95),
+              0 0 90px rgba(147, 51, 234, 0.6) !important;
+  animation: none !important;
+}
+
+/* Mobile Accordion Makrab Glow */
+.mtl-step-makrab .mtl-pill {
+  border-color: rgba(192, 132, 252, 0.5) !important;
+  box-shadow: 0 0 18px rgba(168, 85, 247, 0.25) !important;
+}
+
+.mtl-step-makrab.active .mtl-pill {
+  border-color: #d8b4fe !important;
+  box-shadow: 0 0 28px rgba(192, 132, 252, 0.55), 
+              0 0 50px rgba(147, 51, 234, 0.35) !important;
+}
+
+.mtl-dot-makrab {
+  border-color: #d8b4fe !important;
+  background: #1b0f30 !important;
+  box-shadow: 0 0 14px rgba(192, 132, 252, 0.75) !important;
+  animation: pulseMakrabGlow 2s infinite alternate !important;
+}
+
+.mtl-step-makrab.active .mtl-dot-makrab {
+  background: #c084fc !important;
+  border-color: #ffffff !important;
+  box-shadow: 0 0 25px rgba(233, 213, 255, 1), 0 0 45px rgba(168, 85, 247, 0.85) !important;
+  animation: none !important;
 }
 
 /* Floating Navigation Buttons */

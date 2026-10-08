@@ -8,11 +8,11 @@
 
 | Data | Keterangan |
 | :--- | :--- |
-| **Nama Lengkap** | (Isi nama lengkapmu) |
-| **Gugus** | (Contoh: JavaScript / Python / Dart) |
-| **Akun GitHub** | https://github.com/username-kamu |
-| **Akun Instagram** | @username_kamu |
-| **Profil LinkedIn** | https://linkedin.com/in/username-kamu |
+| **Nama Lengkap** | Qonita Dini Nadhifa |
+| **Gugus** | Kotlin |
+| **Akun GitHub** | https://github.com/26106050021-eng |
+| **Akun Instagram** | @mellodyffa |
+| **Profil LinkedIn** | https://www.linkedin.com/in/qonita-dini-nadhifa- |
 
 ---
 
@@ -20,7 +20,11 @@
 
 > Tuliskan cerita pengalamanmu selama mengikuti rangkaian kegiatan INFONIC 2026 secara naratif dalam bentuk paragraf di bawah ini.
 
-Tuliskan cerita pengalamanmu di sini...
+Pada saat technical meeting, saya merasa sangat senang karena bisa bergaul dengan teman-teman baru dan kita berkreasi untuk membuat jargon gugus.
+Di minggu pertama, saya jadi lebih tau mengenai informatika dan organisasi yang ada di prodi informatika UIN Sunan Kalijaga.
+Di minggu kedua, saya dan teman-teman gugus menjadi lebih dekat kaarena kitaa harus bekerja sama untuk menyelesaikan lomba.
+Di minggu ketiga, saya sangat senang karena gugus kami mendapat stiker terbaik yg banyak saat presentasi flowchart.
+Dan di minggu terakhir, saya mendapat banyak ilmu mengenai cara pembuatan CV yang benar.
 
 ---
 
@@ -28,4 +32,5 @@ Tuliskan cerita pengalamanmu di sini...
 
 > Tuliskan pesan dan kesanmu selama mengikuti kegiatan INFONIC 2026 serta harapan untuk masa depan.
 
-Tuliskan pesan dan kesanmu di sini...
+Kesan saya selama mengikuti kegiatan INFONIC 2026 sangat senang dan saya mendapat banyak ilmu mengenai dunia informatika di perkuliahan yang sebelumnya tidak saya ketahui.
+Pesan saya semoga di acara makrab saya mendapat pengalamann yang benar-benar seru dan tidak terlupakan. Dan semoga kedepannya informatika UIN Sunan Kalijaga semakin maju.
